@@ -4,11 +4,12 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins -> all and any byte? bytes? cons? head float? filter fixnum? group-by last list? map mod nil? not object? object-get-property object-has-property? or panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
+syn keyword oftlispBuiltins -> all and any byte? bytes? cons? eq head float? filter fixnum? group-by last list? map neq nil? not object? object-get-property object-has-property? or panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
+syn keyword oftlispOperators = /= + - * / mod
 
+syn keyword oftlispControl do fn if match progn
 syn keyword oftlispDecls ctor def defclass defmacro defn mdef mreturn val
 syn keyword oftlispModuleStmts module import
-syn keyword oftlispOperators do fn if match progn
 
 syn keyword oftlispTodo BUG FIXME TODO XXX contained
 syn match oftlispComment ";.*" contains=oftlispTodo
@@ -26,10 +27,12 @@ syn keyword oftlispNil nil
 
 let b:current_syntax = "oftlisp"
 
+hi def link oftlispBuiltins Function
+hi def link oftlispOperators Operator
+
+hi def link oftlispControl Statement
 hi def link oftlispDecls Statement
 hi def link oftlispModuleStmts Include
-hi def link oftlispOperators Statement
-hi def link oftlispBuiltins Function
 
 hi def link oftlispComment Comment
 hi def link oftlispTodo Todo
