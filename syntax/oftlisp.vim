@@ -2,7 +2,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword oftlispDecls ctor def defclass defmacro defn mdef val
+syn keyword oftlispDecls ctor def defclass defmacro defn mdef mreturn val
 syn keyword oftlispModuleStmts module import
 syn keyword oftlispOperators do fn if match progn
 
