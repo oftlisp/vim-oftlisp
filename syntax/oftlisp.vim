@@ -4,7 +4,7 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module
-syn keyword oftlispBuiltins byte? bytes? head float? filter fixnum? group-by last list? map mod nil? object? object-get-property object-has-property? panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
+syn keyword oftlispBuiltins byte? bytes? cons? head float? filter fixnum? group-by last list? map mod nil? object? object-get-property object-has-property? panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
 
 syn keyword oftlispDecls ctor def defclass defmacro defn mdef mreturn val
 syn keyword oftlispModuleStmts module import
