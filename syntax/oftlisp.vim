@@ -4,7 +4,7 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins -> all and any byte? bytes? cons? eq head float? filter fixnum? group-by last list? map neq nil? not object? object-get-property object-has-property? or panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
+syn keyword oftlispBuiltins -> ->> all and any byte? bytes? cons? eq head float? filter fixnum? group-by last list? map neq nil? not object? object-get-property object-has-property? or panic print println show skip stm-read stm-var stm-write string? symbol? tail todo
 syn keyword oftlispOperators = /= + - * / mod
 
 syn keyword oftlispControl do fn if match progn
