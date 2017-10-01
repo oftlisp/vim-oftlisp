@@ -8,7 +8,7 @@ syn keyword oftlispBuiltins -> ->> all and any byte? bytes? cons? eq head float?
 syn keyword oftlispOperators = /= + - * / mod
 
 syn keyword oftlispControl do fn if match progn
-syn keyword oftlispDecls ctor def defclass defmacro defn mdef mreturn val
+syn keyword oftlispDecls ctor def defclass defmacro defmethod defn mdef mreturn val
 syn keyword oftlispModuleStmts module import
 
 syn keyword oftlispTodo BUG FIXME TODO XXX contained
