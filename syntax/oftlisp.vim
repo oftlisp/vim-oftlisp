@@ -6,13 +6,14 @@ endif
 " std/prelude module.
 syn keyword oftlispBuiltins -> ->> >>= <$> <*> all and any byte? bytes? car cdr cons cons? eq head float? filter fixnum? foldl foldr group-by last list? map neq nil? not object? object-get-property object-has-property? or panic print println pure show skip stm-new stm-read stm-write string? symbol? tail todo
 syn keyword oftlispOperators = /= + - * / mod
+syn keyword oftlispTodoMacro todo
 
 syn keyword oftlispControl cond do else fn if match progn
 syn keyword oftlispDecls ctor def defclass defmacro defmethod defn mdef val
 syn keyword oftlispModuleStmts module import
 
-syn keyword oftlispTodo BUG FIXME TODO XXX contained
-syn match oftlispComment ";.*" contains=oftlispTodo
+syn keyword oftlispCommentTodo BUG FIXME TODO XXX contained
+syn match oftlispComment ";.*" contains=oftlispCommentTodo
 
 syn match oftlispSymbol "[a-zA-Z+./$?*#=<>_-][0-9a-zA-Z+./$?*#=<>_-]*"
 syn region oftlispString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2,oftlispStringHex4,oftlispStringHex8,oftlispStringEscUnknown
@@ -29,13 +30,14 @@ let b:current_syntax = "oftlisp"
 
 hi def link oftlispBuiltins Function
 hi def link oftlispOperators Operator
+hi def link oftlispTodoMacro Todo
 
 hi def link oftlispControl Statement
 hi def link oftlispDecls Statement
 hi def link oftlispModuleStmts Include
 
 hi def link oftlispComment Comment
-hi def link oftlispTodo Todo
+hi def link oftlispCommentTodo Todo
 
 hi def link oftlispSymbol Identifier
 hi def link oftlispNumber Number
