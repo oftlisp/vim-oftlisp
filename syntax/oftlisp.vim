@@ -7,7 +7,7 @@ endif
 syn keyword oftlispBuiltins -> ->> >>= <$> <*> all and any byte? bytes? car cdr cons cons? eq head float? filter fixnum? foldl foldr group-by last list? map neq nil? not object? object-get-property object-has-property? or panic print println pure show skip stm-new stm-read stm-write string? symbol? tail todo
 syn keyword oftlispOperators = /= + - * / mod
 
-syn keyword oftlispControl cond do fn if match progn
+syn keyword oftlispControl cond do else fn if match progn
 syn keyword oftlispDecls ctor def defclass defmacro defmethod defn mdef val
 syn keyword oftlispModuleStmts module import
 
