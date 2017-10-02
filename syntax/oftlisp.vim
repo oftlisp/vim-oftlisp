@@ -22,7 +22,7 @@ syn match oftlispStringHex2 "\\x[0-9a-fA-F]\{2\}" contained
 syn match oftlispStringHex4 "\\u[0-9a-fA-F]\{4\}" contained
 syn match oftlispStringHex8 "\\U[0-9a-fA-F]\{8\}" contained
 syn match oftlispNumber "[0-9]\+\(\.[0-9]\+\)\?"
-syn keyword oftlispBool t f
+syn keyword oftlispBool true false
 syn keyword oftlispNil nil
 
 let b:current_syntax = "oftlisp"
