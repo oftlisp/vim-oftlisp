@@ -4,8 +4,8 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply atomic-word atomic-word.cas atomic-word.load atomic-word.store byte? bytes? compare concat concat-strings cons cons? contains? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr for-each group-by id init last length leq less list list? lookup lookup-by make-vector map neq nil? not or or-default panic print println put reverse shl? show skip sort sort-by split-at string? symbol? tail take todo
-syn keyword oftlispOperators . = /= <> < > + - * / mod
+syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply byte? bytes? compare concat concat-strings cons cons? contains? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr for-each group-by id init last length leq less list list? lookup lookup-by make-vector map neq nil? not or or-default panic print println put reverse shl? show skip sort sort-by split-at string? symbol? tail take todo
+syn keyword oftlispOperators . = /= <> < <= > >= + - * / mod
 syn keyword oftlispSpecial ...
 syn keyword oftlispThis @ this
 syn keyword oftlispTodoMacro todo
