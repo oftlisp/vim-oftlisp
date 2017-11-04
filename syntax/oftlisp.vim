@@ -4,13 +4,13 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply byte? bytes? compare concat concat-strings cons cons? contains? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr for-each group-by id init last length leq less list list? lookup lookup-by make-vector map neq nil? not or or-default panic print println put reverse shl? show skip sort sort-by split-at string? symbol? tail take todo
+syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply byte? bytes? compare concat concat-strings cons cons? contains? empty? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr for-each group-by id init last length leq less list list? lookup lookup-by make-vector map neq nil? not nth or or-default panic print println put reverse shl? show skip sort sort-by split-at string? symbol? tail take todo
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / mod
 syn keyword oftlispSpecial ...
-syn keyword oftlispThis @ this
+syn keyword oftlispThis $ this
 syn keyword oftlispTodoMacro todo
 
-syn keyword oftlispControl -> cond do else fn if macro-progn match progn unless when
+syn keyword oftlispControl \ ! -> assert assert-eq case compile-time-eval cond do else fn if macro-progn match progn unless when
 syn keyword oftlispDecls <- ctor def defclass defmacro defmethod defn defnrec deftest dtor let let1 letrec mdef named-ctor val
 syn keyword oftlispModuleStmts module import
 
@@ -25,7 +25,7 @@ syn match oftlispStringEsc "\\[\"'\\nrt]" contained
 syn match oftlispStringHex2 "\\x[0-9a-fA-F]\{2\}" contained
 syn match oftlispStringHex4 "\\u[0-9a-fA-F]\{4\}" contained
 syn match oftlispStringHex8 "\\U[0-9a-fA-F]\{8\}" contained
-syn match oftlispNumber "[0-9]\+\(\.[0-9]\+\)\?"
+syn match oftlispNumber "-\?[0-9]\+\(\.[0-9]\+\)\?"
 syn keyword oftlispBool true false
 syn keyword oftlispNil nil
 
