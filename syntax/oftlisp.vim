@@ -4,7 +4,7 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply byte? bytes? compare concat concat-strings cons cons? contains? each empty? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr group-by id init last length leq less list list? list<-vector lookup lookup-by make-vector map neq nil? not nth or or-default panic print println put reverse shl? show skip sort sort-by split-at string? string<-symbol symbol? symbol<-string tail take todo vector? vector<-list vector.length vector.nth vector.set vector.slice
+syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any append apply byte? bytes? compare concat concat-strings cons cons? contains? each empty? enumerate eq exit exit-with gensym geq get greater head float? filter fixnum? foldl foldr group-by id init last length leq less list list? list<-vector lookup lookup-by make-vector map neq nil? not nth or or-default panic print println put reverse shl? show skip sort sort-by split-at string? string<-symbol string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo vector? vector<-list vector.length vector.nth vector.set vector.slice
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / mod
 syn keyword oftlispSpecial ... $
 syn keyword oftlispThis this
