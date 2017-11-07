@@ -10,7 +10,7 @@ syn keyword oftlispSpecial ... $
 syn keyword oftlispThis this
 syn keyword oftlispTodoMacro todo
 
-syn keyword oftlispControl \\ ! -> assert assert-eq case compile-time-eval cond do else for-each fn if macro-progn match progn unless when
+syn keyword oftlispControl \\ ! -> ->> assert assert-eq case compile-time-eval cond do else for-each fn if macro-progn match progn unless when
 syn keyword oftlispDecls <- ctor def defclass defmacro defmethod defn defnrec deftest dtor let let1 letrec mdef named-ctor val
 syn keyword oftlispModuleStmts module import
 
