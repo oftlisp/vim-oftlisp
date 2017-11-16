@@ -4,7 +4,7 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 1+ 1- all and any any-shl? append apply build-vector byte? bytes? compare concat concat-strings cons cons? contains? debug-trace display displayln each empty? enumerate eq err err? exit exit-with function? gensym geq get greater head float? filter fixnum? flat-map foldl foldr group-by id init last length leq less list list? list<-vector lookup lookup-by make-vector map neq nil? not nth ok ok? or or-default panic print println put reverse shl? show skip sort sort-by split-at string? string<-symbol string.explode string.ord string.scalar-head string.scalar-tail string.slice symbol? symbol<-string tail take todo uniq unique vector? vector<-list vector.length vector.nth vector.set vector.slice
+syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append apply build-vector byte? bytes? byte<-fixnum compare concat concat-strings cons cons? contains? debug-trace display displayln each empty? enumerate eq err err? exit exit-with function? gensym geq get greater head float? filter fixnum? flat-map foldl foldr group-by id init last length leq less list list? list<-vector lookup lookup-by make-vector map must neq nil? not nth ok ok? or or-default panic print println put reverse shl? show skip sort sort-by split-at string? string<-symbol string.explode string.ord string.scalar-head string.scalar-tail string.slice symbol? symbol<-string tail take todo uniq unique vector? vector<-list vector.length vector.nth vector.set vector.slice
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / mod
 syn keyword oftlispSpecial ... $
 syn keyword oftlispThis this
