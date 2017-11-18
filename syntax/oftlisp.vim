@@ -6,7 +6,7 @@ endif
 " std/prelude module.
 syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append apply build-list build-vector byte? bytes? byte<-fixnum compare concat concat-strings cons cons? contains? debug-trace display displayln each empty? ends-with enumerate eq err err? exit exit-with explode float? filter fixnum? flat-map foldl foldr function? gensym geq get greater group-by head join id init last length leq less list list? list<-vector lookup lookup-all lookup-all-by lookup-by make-vector map must neq nil? not nth object? object-cons object-type object-value ok ok? or or-default panic print println put reverse shl? show skip slice sort sort-by split-at starts-with string? string<-symbol string.ord string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo uniq unique vector vector? vector<-list vector.length vector.nth vector.set zip
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / mod
-syn keyword oftlispSpecial ... $
+syn keyword oftlispSpecial ... $ , ,@ ` '
 syn keyword oftlispThis this
 syn keyword oftlispTodoMacro todo
 
