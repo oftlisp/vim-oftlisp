@@ -4,14 +4,14 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append apply build-list build-vector byte? bytes? byte<-fixnum compare concat concat-strings cons cons? contains? debug-trace display displayln each either empty? ends-with enumerate eq err err? exit exit-with explode float? filter fixnum? flat-map foldl foldr function? gensym geq greater group-by head join id init last length leq less list list? list<-vector lookup lookup-all lookup-all-by lookup-by make-vector map must neq nil? not nth object? object-cons object-get-method object-has-method? object-put-method object-type object-value ok ok? or or-default panic print println result? result.unwrap result.unwrap-err reverse sequence shl? show skip slice sort sort-by split-at starts-with string? string<-symbol string.ord string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo traverse uniq unique unwind-protect vector vector? vector<-list vector.length vector.nth vector.set zip
+syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append apply build-list build-vector byte? bytes? byte<-fixnum compare concat concat-strings cons cons? contains? debug-trace display displayln each either empty? ends-with enumerate eq err err? exit exit-with explode float? filter fixnum? flat-map foldl foldr function? gensym geq greater group-by head join id init last length leq less list list? list<-vector lookup lookup-all lookup-all-by lookup-by make-vector map module-namespaced-symbol must neq nil? not nth object? object-cons object-get-method object-has-method? object-put-method object-type object-value ok ok? or or-default panic prim-eq print println result? result.pure result.unwrap result.unwrap-err reverse sequence shl? show skip slice sort sort-by split-at starts-with string? string<-symbol string.ord string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo traverse uniq unique unwind-protect vector vector? vector<-list vector.length vector.nth vector.set zip
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / bitand bitnot bitor bitxor mod
 syn keyword oftlispSpecial ... $ , ,@ ` '
 syn keyword oftlispThis this
 syn keyword oftlispTodoMacro todo
 
 syn keyword oftlispControl \\ ! % -> ->> aif assert assert-eq case compile-time-eval cond do else for-each fn if macro-progn match progn unless when
-syn keyword oftlispDecls <- ctor def defclass defcurried definit defmacro defmethod defn defnrec deftest dtor let let1 letrec mdef named-ctor val
+syn keyword oftlispDecls <- ctor def defclass defcurried definit defmacro defmethod defn defnrec defstatic deftest dtor let let1 letrec mdef named-ctor val
 syn keyword oftlispModuleStmts module import
 
 syn keyword oftlispCommentTodo BUG FIXME TODO XXX contained
