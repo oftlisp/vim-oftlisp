@@ -4,7 +4,7 @@ endif
 
 " TODO Investigate generating this definition from the definition of the
 " std/prelude module.
-syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append append-strings apply build-list build-vector byte? bytes? byte<-fixnum compare concat cons cons? contains? debug-trace display displayln each either empty? ends-with enumerate eq err err? exit exit-with explode float? filter fixnum? flat-map foldl foldr function? gensym geq greater group-by head join id init last length leq less list list? list<-vector lookup lookup-all lookup-all-by lookup-by make-vector map module-namespaced-symbol must neq nil? not nth object? object-cons object-get-method object-has-method? object-put-method object-type object-value ok ok? or or-default panic prim-eq print println result? result.pure result.unwrap result.unwrap-err reverse sequence shl? show skip slice sort sort-by split-at starts-with string? string<-symbol string.ord string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo traverse uniq unique unwind-protect vector vector? vector<-list vector.length vector.nth vector.set zip
+syn keyword oftlispBuiltins >>= <$> <*> 0? 0- 1+ 1- all and any any-shl? append append-strings apply build-list build-vector byte? bytes? byte<-fixnum compare concat concat-strings cons cons? contains? debug-trace display displayln each either empty? ends-with enumerate eq err err? exit exit-with explode float? filter fixnum? flat-map foldl foldr function? gensym geq greater group-by head join id init last length leq less list list? list<-vector lookup lookup-all lookup-all-by lookup-by make-vector map module-namespaced-symbol must neq nil? not nth object? object-cons object-get-method object-has-method? object-put-method object-type object-value ok ok? or or-default panic prim-eq print println result? result.pure result.unwrap result.unwrap-err reverse sequence shl? show skip slice sort sort-by split-at starts-with string? string<-symbol string.ord string.scalar-head string.scalar-tail symbol? symbol<-string tail take todo traverse uniq unique unwind-protect vector vector? vector<-list vector.length vector.nth vector.set zip
 syn keyword oftlispOperators . = /= <> < <= > >= + - * / bitand bitnot bitor bitxor mod
 syn keyword oftlispSpecial ... $ , ,@ ` '
 syn keyword oftlispThis this
@@ -21,7 +21,7 @@ syn match oftlispSymbol "#\?[a-zA-Z+./$?*=<>_-][0-9a-zA-Z+./$?*=<>_-]*"
 syn match oftlispCadr "c[ad]\+r"
 syn region oftlispString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2,oftlispStringHex4,oftlispStringHex8,oftlispStringEscUnknown
 syn match oftlispStringEscUnknown "\\." contained
-syn match oftlispStringEsc "\\[\"'\\nrt]" contained
+syn match oftlispStringEsc "\\[\"\\abenrt]" contained
 syn match oftlispStringHex2 "\\x[0-9a-fA-F]\{2\}" contained
 syn match oftlispStringHex4 "\\u[0-9a-fA-F]\{4\}" contained
 syn match oftlispStringHex8 "\\U[0-9a-fA-F]\{8\}" contained
