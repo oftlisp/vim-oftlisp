@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.oft set filetype=oftlisp
+au BufRead,BufNewFile *.oft,*.oftd set filetype=oftlisp
