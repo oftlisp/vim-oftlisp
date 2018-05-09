@@ -17,7 +17,7 @@ syn keyword oftlispModuleStmts module import
 syn keyword oftlispCommentTodo BUG FIXME TODO XXX contained
 syn match oftlispComment ";.*" contains=oftlispCommentTodo
 
-syn match oftlispSymbol "#\?[a-zA-Z+./$?*=<>_-][0-9a-zA-Z+./$?*=<>_-]*"
+syn match oftlispSymbol "[a-zA-Z#+./$?*=<>_-][0-9a-zA-Z#+./$?*=<>_-]*"
 syn match oftlispCadr "c[ad]\+r"
 syn region oftlispBytes start=+b"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2
 syn region oftlispString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2,oftlispStringHex4,oftlispStringHex8,oftlispStringEscUnknown
