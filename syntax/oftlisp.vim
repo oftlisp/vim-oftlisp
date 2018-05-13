@@ -19,10 +19,10 @@ syn match oftlispComment ";.*" contains=oftlispCommentTodo
 
 syn match oftlispSymbol "#\?[a-zA-Z:+./$?*=<>_-][0-9a-zA-Z:+./$?*=<>_-]*"
 syn match oftlispCadr "c[ad]\+r"
-syn region oftlispBytes start=+b"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2
+syn region oftlispBytes start=+b"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2,oftlispStringEscUnknown
 syn region oftlispString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=oftlispStringEsc,oftlispStringHex2,oftlispStringHex4,oftlispStringHex8,oftlispStringEscUnknown
 syn match oftlispStringEscUnknown "\\." contained
-syn match oftlispStringEsc "\\[\"\\abenrt]" contained
+syn match oftlispStringEsc "\\[\"\\0abenrt]" contained
 syn match oftlispStringHex2 "\\x[0-9a-fA-F]\{2\}" contained
 syn match oftlispStringHex4 "\\u[0-9a-fA-F]\{4\}" contained
 syn match oftlispStringHex8 "\\U[0-9a-fA-F]\{8\}" contained
