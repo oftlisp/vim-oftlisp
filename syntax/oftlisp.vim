@@ -11,7 +11,7 @@ syn keyword oftlispThis this
 syn keyword oftlispTodoMacro todo
 
 syn keyword oftlispControl \\ ! % -> ->> aif assert assert-eq case compile-time-eval cond do else for-each fn if macro-progn match progn unless when
-syn keyword oftlispDecls <- ctor def defclass defcurried definit defmacro defmethod defn defnrec defstatic deftest dtor let let1 letrec mdef named-ctor val
+syn keyword oftlispDecls <- ctor def defclass defcurried definit defmacro defmethod defn defstatic deftest intrinsics:defn let let1 letrec mdef named-ctor val
 syn keyword oftlispModuleStmts module import
 
 syn keyword oftlispCommentTodo BUG FIXME TODO XXX contained
